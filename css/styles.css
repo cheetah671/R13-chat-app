@@ -1,0 +1,73 @@
+.login-container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+}
+.register-container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 350px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.register-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.login-container input[type="text"],.login-container input[type="text"],
+.login-container input[type="email"], 
+.login-container input[type="password"] {
+    width: 94.5%;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    transition: ease 0.3s;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"], 
+.register-container input[type="password"] {
+    width: 94.5%;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+}
+.register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    transition: ease 0.3s;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.register-container button:hover {
+    background-color: #0056b3;
+}
