@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat - R13</title>
+    <link rel="stylesheet" href="css/mainstyles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <header class="chat-header">
+            <h1 class="app-title">R13</h1>
+            <div class="user-info">
+                <img src="images/avatars/user-avatar1.jpg" alt="User Avatar" class="avatar">
+                <span class="username">YourUsername</span>
+            </div>
+        </header>
+
+        <!-- Chat Window -->
+        <main class="chat-window">
+            <div class="chat-messages">
+                <div class="message sent">
+                    <p>Hello everyone!</p>
+                    <span class="timestamp">10:00 AM</span>
+                </div>
+                <div class="message received">
+                    <p>Hi! Welcome to the group chat.</p>
+                    <span class="timestamp">10:01 AM</span>
+                </div>
+                <!-- More messages will appear here -->
+            </div>
+            <form class="message-input-form">
+                <input type="text" placeholder="Type your message..." class="message-input" required>
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

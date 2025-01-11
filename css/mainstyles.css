@@ -1,0 +1,131 @@
+/* Group Chat Interface Styles */
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* Header */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1d4068;
+    color: #ffc400;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+.user-info .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+.username {
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* Chat Window */
+.chat-window {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1a1d;
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+.message {
+    max-width: 60%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+    word-wrap: break-word;
+}
+.message.sent {
+    background-color: #000000;
+    color: #d3eb00;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+.message.received {
+    background-color: #1d4068;
+    color: #ffffff;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+.message .timestamp {
+    font-size: 0.75rem;
+    color: #CCCCCC;
+    position: absolute;
+    bottom: -1.2rem;
+    right: 0.5rem;
+}
+/* Message Input Form */
+.message-input-form {
+    display: flex;
+    padding: 1rem;
+    background-color: #1d4068;
+    border-top: 1px solid #000000;
+}
+.message-input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+.send-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.send-button:hover {
+    background-color: #000000;
+}
+/* Scrollbar Styling */
+.chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-messages::-webkit-scrollbar-track {
+    background: #000000;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: #CCCCCC;
+    border-radius: 4px;
+    border: 2px solid #F1F1F1;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .chat-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .app-title {
+        margin-bottom: 0.5rem;
+    }
+   .message {
+        max-width: 80%;
+    }
+}
